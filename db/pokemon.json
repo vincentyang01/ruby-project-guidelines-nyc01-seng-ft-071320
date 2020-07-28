@@ -1,2039 +1,2040 @@
-[{
+[
+  {
     "id": 1,
     "name": "Bulbasaur",
-    "type": ["Grass","Poison"],
-    "HP": 45,
-    "Attack": 49,
-    "Defense": 49,
-    "Sp. Attack": 65,
-    "Sp. Defense": 65,
-    "Speed": 45
+    "element": ["Grass","Poison"],
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "spec_atk": 65,
+    "spec_def": 65,
+    "speed": 45
   },
   {
     "id": 2,
     "name":  "Ivysaur",
-    "type": ["Grass","Poison"],
-      "HP": 60,
-      "Attack": 62,
-      "Defense": 63,
-      "Sp. Attack": 80,
-      "Sp. Defense": 80,
-      "Speed": 60
+    "element": ["Grass","Poison"],
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "spec_atk": 80,
+      "spec_def": 80,
+      "speed": 60
   },
   {
     "id": 3,
     "name": "Venusaur",
-    "type": ["Grass", "Poison"],
-      "HP": 80,
-      "Attack": 82,
-      "Defense": 83,
-      "Sp. Attack": 100,
-      "Sp. Defense": 100,
-      "Speed": 80
+    "element": ["Grass", "Poison"],
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "spec_atk": 100,
+      "spec_def": 100,
+      "speed": 80
   },
   {
     "id": 4,
     "name": "Charmander",
-    "type": ["Fire"],
-      "HP": 39,
-      "Attack": 52,
-      "Defense": 43,
-      "Sp. Attack": 60,
-      "Sp. Defense": 50,
-      "Speed": 65
+    "element": ["Fire"],
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "spec_atk": 60,
+      "spec_def": 50,
+      "speed": 65
   },
   {
     "id": 5,
     "name": "Charmeleon",
-    "type": ["Fire"],
-      "HP": 58,
-      "Attack": 64,
-      "Defense": 58,
-      "Sp. Attack": 80,
-      "Sp. Defense": 65,
-      "Speed": 80
+    "element": ["Fire"],
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "spec_atk": 80,
+      "spec_def": 65,
+      "speed": 80
     },
   {
     "id": 6,
     "name": "Charizard",
-    "type": ["Fire", "Flying"],
-    "HP": 78,
-      "Attack": 84,
-      "Defense": 78,
-      "Sp. Attack": 109,
-      "Sp. Defense": 85,
-      "Speed": 100
+    "element": ["Fire", "Flying"],
+    "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "spec_atk": 109,
+      "spec_def": 85,
+      "speed": 100
   },
   {
     "id": 7,
     "name": "Squirtle",
-    "type": ["Water"],
-    "HP": 44,
-      "Attack": 48,
-      "Defense": 65,
-      "Sp. Attack": 50,
-      "Sp. Defense": 64,
-      "Speed": 43
+    "element": ["Water"],
+    "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "spec_atk": 50,
+      "spec_def": 64,
+      "speed": 43
   },
   {
     "id": 8,
     "name": "Wartortle",
-    "type": [ "Water"],
-      "HP": 59,
-      "Attack": 63,
-      "Defense": 80,
-      "Sp. Attack": 65,
-      "Sp. Defense": 80,
-      "Speed": 58
+    "element": [ "Water"],
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "spec_atk": 65,
+      "spec_def": 80,
+      "speed": 58
   },
   {
     "id": 9,
     "name": "Blastoise",
-    "type": ["Water"],
-      "HP": 79,
-      "Attack": 83,
-      "Defense": 100,
-      "Sp. Attack": 85,
-      "Sp. Defense": 105,
-      "Speed": 78
+    "element": ["Water"],
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "spec_atk": 85,
+      "spec_def": 105,
+      "speed": 78
   },
   {
     "id": 10,
     "name": "Caterpie",
-    "type": ["Bug"],
-      "HP": 45,
-      "Attack": 30,
-      "Defense": 35,
-      "Sp. Attack": 20,
-      "Sp. Defense": 20,
-      "Speed": 45
+    "element": ["Bug"],
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "spec_atk": 20,
+      "spec_def": 20,
+      "speed": 45
   },
   {
     "id": 11,
     "name": "Metapod",
-    "type": ["Bug"],
-      "HP": 50,
-      "Attack": 20,
-      "Defense": 55,
-      "Sp. Attack": 25,
-      "Sp. Defense": 25,
-      "Speed": 30
+    "element": ["Bug"],
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "spec_atk": 25,
+      "spec_def": 25,
+      "speed": 30
   },
   {
     "id": 12,
     "name":  "Butterfree",
-    "type": ["Bug", "Flying"],
-      "HP": 60,
-      "Attack": 45,
-      "Defense": 50,
-      "Sp. Attack": 90,
-      "Sp. Defense": 80,
-      "Speed": 70
+    "element": ["Bug", "Flying"],
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "spec_atk": 90,
+      "spec_def": 80,
+      "speed": 70
     
   },
   {
     "id": 13,
     "name": "Weedle",
-    "type": [
+    "element": [
       "Bug",
       "Poison"
     ],
-      "HP": 40,
-      "Attack": 35,
-      "Defense": 30,
-      "Sp. Attack": 20,
-      "Sp. Defense": 20,
-      "Speed": 50
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "spec_atk": 20,
+      "spec_def": 20,
+      "speed": 50
   },
   {
     "id": 14,
     "name": "Kakuna",
-    "type": ["Bug", "Poison"],
-      "HP": 45,
-      "Attack": 25,
-      "Defense": 50,
-      "Sp. Attack": 25,
-      "Sp. Defense": 25,
-      "Speed": 35
+    "element": ["Bug", "Poison"],
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "spec_atk": 25,
+      "spec_def": 25,
+      "speed": 35
   },
   {
     "id": 15,
     "name": "Beedrill",
-    "type": [
+    "element": [
       "Bug",
       "Poison"
     ],
     
-      "HP": 65,
-      "Attack": 90,
-      "Defense": 40,
-      "Sp. Attack": 45,
-      "Sp. Defense": 80,
-      "Speed": 75
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "spec_atk": 45,
+      "spec_def": 80,
+      "speed": 75
     
   },
   {
     "id": 16,
     "name": "Pidgey",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 40,
-      "Attack": 45,
-      "Defense": 40,
-      "Sp. Attack": 35,
-      "Sp. Defense": 35,
-      "Speed": 56
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "spec_atk": 35,
+      "spec_def": 35,
+      "speed": 56
   },
   {
     "id": 17,
     "name": "Pidgeotto",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 63,
-      "Attack": 60,
-      "Defense": 55,
-      "Sp. Attack": 50,
-      "Sp. Defense": 50,
-      "Speed": 71
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "spec_atk": 50,
+      "spec_def": 50,
+      "speed": 71
     
   },
   {
     "id": 18,
     "name": "Pidgeot",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 83,
-      "Attack": 80,
-      "Defense": 75,
-      "Sp. Attack": 70,
-      "Sp. Defense": 70,
-      "Speed": 101
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "spec_atk": 70,
+      "spec_def": 70,
+      "speed": 101
   },
   {
     "id": 19,
     "name": "Rattata",
-    "type": ["Normal"],
-      "HP": 30,
-      "Attack": 56,
-      "Defense": 35,
-      "Sp. Attack": 25,
-      "Sp. Defense": 35,
-      "Speed": 72
+    "element": ["Normal"],
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "spec_atk": 25,
+      "spec_def": 35,
+      "speed": 72
   },
   {
     "id": 20,
     "name": "Raticate",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 55,
-      "Attack": 81,
-      "Defense": 60,
-      "Sp. Attack": 50,
-      "Sp. Defense": 70,
-      "Speed": 97
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "spec_atk": 50,
+      "spec_def": 70,
+      "speed": 97
   },
   {
     "id": 21,
     "name": "Spearow"
     ,
-    "type": ["Normal", "Flying"],
-      "HP": 40,
-      "Attack": 60,
-      "Defense": 30,
-      "Sp. Attack": 31,
-      "Sp. Defense": 31,
-      "Speed": 70
+    "element": ["Normal", "Flying"],
+      "hp": 40,
+      "attack": 60,
+      "defense": 30,
+      "spec_atk": 31,
+      "spec_def": 31,
+      "speed": 70
   },
   {
     "id": 22,
     "name": "Fearow",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 65,
-      "Attack": 90,
-      "Defense": 65,
-      "Sp. Attack": 61,
-      "Sp. Defense": 61,
-      "Speed": 100
+      "hp": 65,
+      "attack": 90,
+      "defense": 65,
+      "spec_atk": 61,
+      "spec_def": 61,
+      "speed": 100
   },
   {
     "id": 23,
     "name": "Ekans",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 35,
-      "Attack": 60,
-      "Defense": 44,
-      "Sp. Attack": 40,
-      "Sp. Defense": 54,
-      "Speed": 55
+      "hp": 35,
+      "attack": 60,
+      "defense": 44,
+      "spec_atk": 40,
+      "spec_def": 54,
+      "speed": 55
   },
   {
     "id": 24,
     "name": "Arbok",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 60,
-      "Attack": 95,
-      "Defense": 69,
-      "Sp. Attack": 65,
-      "Sp. Defense": 79,
-      "Speed": 80
+      "hp": 60,
+      "attack": 95,
+      "defense": 69,
+      "spec_atk": 65,
+      "spec_def": 79,
+      "speed": 80
   },
   {
     "id": 25,
     "name": "Pikachu",
-    "type": ["Electric"],
-      "HP": 35,
-      "Attack": 55,
-      "Defense": 40,
-      "Sp. Attack": 50,
-      "Sp. Defense": 50,
-      "Speed": 90
+    "element": ["Electric"],
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "spec_atk": 50,
+      "spec_def": 50,
+      "speed": 90
   },
   {
     "id": 26,
     "name": "Raichu",
-    "type": [
+    "element": [
       "Electric"
     ],
-      "HP": 60,
-      "Attack": 90,
-      "Defense": 55,
-      "Sp. Attack": 90,
-      "Sp. Defense": 80,
-      "Speed": 110
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "spec_atk": 90,
+      "spec_def": 80,
+      "speed": 110
   },
   {
     "id": 27,
     "name": "Sandshrew",
-    "type": ["Ground"],
-      "HP": 50,
-      "Attack": 75,
-      "Defense": 85,
-      "Sp. Attack": 20,
-      "Sp. Defense": 30,
-      "Speed": 40
+    "element": ["Ground"],
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "spec_atk": 20,
+      "spec_def": 30,
+      "speed": 40
   },
   {
     "id": 28,
     "name": "Sandslash",
-    "type": [
+    "element": [
       "Ground"
     ],
 
-      "HP": 75,
-      "Attack": 100,
-      "Defense": 110,
-      "Sp. Attack": 45,
-      "Sp. Defense": 55,
-      "Speed": 65
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "spec_atk": 45,
+      "spec_def": 55,
+      "speed": 65
     
   },
   {
     "id": 29,
     "name": "Nidoran♀",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 55,
-      "Attack": 47,
-      "Defense": 52,
-      "Sp. Attack": 40,
-      "Sp. Defense": 40,
-      "Speed": 41
+      "hp": 55,
+      "attack": 47,
+      "defense": 52,
+      "spec_atk": 40,
+      "spec_def": 40,
+      "speed": 41
   },
   {
     "id": 30,
     "name": "Nidorina",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 70,
-      "Attack": 62,
-      "Defense": 67,
-      "Sp. Attack": 55,
-      "Sp. Defense": 55,
-      "Speed": 56
+      "hp": 70,
+      "attack": 62,
+      "defense": 67,
+      "spec_atk": 55,
+      "spec_def": 55,
+      "speed": 56
   },
   {
     "id": 31,
     "name": "Nidoqueen",
-    "type": [
+    "element": [
       "Poison",
       "Ground"
     ],
-      "HP": 90,
-      "Attack": 92,
-      "Defense": 87,
-      "Sp. Attack": 75,
-      "Sp. Defense": 85,
-      "Speed": 76
+      "hp": 90,
+      "attack": 92,
+      "defense": 87,
+      "spec_atk": 75,
+      "spec_def": 85,
+      "speed": 76
   },
   {
     "id": 32,
     "name": "Nidoran♂",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 46,
-      "Attack": 57,
-      "Defense": 40,
-      "Sp. Attack": 40,
-      "Sp. Defense": 40,
-      "Speed": 50
+      "hp": 46,
+      "attack": 57,
+      "defense": 40,
+      "spec_atk": 40,
+      "spec_def": 40,
+      "speed": 50
   },
   {
     "id": 33,
     "name": "Nidorino",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 61,
-      "Attack": 72,
-      "Defense": 57,
-      "Sp. Attack": 55,
-      "Sp. Defense": 55,
-      "Speed": 65
+      "hp": 61,
+      "attack": 72,
+      "defense": 57,
+      "spec_atk": 55,
+      "spec_def": 55,
+      "speed": 65
   },
   {
     "id": 34,
     "name": "Nidoking",
-    "type": [
+    "element": [
       "Poison",
       "Ground"
     ],
-      "HP": 81,
-      "Attack": 102,
-      "Defense": 77,
-      "Sp. Attack": 85,
-      "Sp. Defense": 75,
-      "Speed": 85
+      "hp": 81,
+      "attack": 102,
+      "defense": 77,
+      "spec_atk": 85,
+      "spec_def": 75,
+      "speed": 85
   },
   {
     "id": 35,
     "name": "Clefairy",
-    "type": [
+    "element": [
       "Fairy"
     ],
-      "HP": 70,
-      "Attack": 45,
-      "Defense": 48,
-      "Sp. Attack": 60,
-      "Sp. Defense": 65,
-      "Speed": 35
+      "hp": 70,
+      "attack": 45,
+      "defense": 48,
+      "spec_atk": 60,
+      "spec_def": 65,
+      "speed": 35
   },
   {
     "id": 36,
     "name": "Clefable",
-    "type": [
+    "element": [
       "Fairy"
     ],
-      "HP": 95,
-      "Attack": 70,
-      "Defense": 73,
-      "Sp. Attack": 95,
-      "Sp. Defense": 90,
-      "Speed": 60
+      "hp": 95,
+      "attack": 70,
+      "defense": 73,
+      "spec_atk": 95,
+      "spec_def": 90,
+      "speed": 60
   },
   {
     "id": 37,
     "name": "Vulpix",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 38,
-      "Attack": 41,
-      "Defense": 40,
-      "Sp. Attack": 50,
-      "Sp. Defense": 65,
-      "Speed": 65
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "spec_atk": 50,
+      "spec_def": 65,
+      "speed": 65
   },
   {
     "id": 38,
     "name":  "Ninetales",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 73,
-      "Attack": 76,
-      "Defense": 75,
-      "Sp. Attack": 81,
-      "Sp. Defense": 100,
-      "Speed": 100
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "spec_atk": 81,
+      "spec_def": 100,
+      "speed": 100
   },
   {
     "id": 39,
     "name": "Jigglypuff",
-    "type": [
+    "element": [
       "Normal",
       "Fairy"
     ],
-      "HP": 115,
-      "Attack": 45,
-      "Defense": 20,
-      "Sp. Attack": 45,
-      "Sp. Defense": 25,
-      "Speed": 20
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "spec_atk": 45,
+      "spec_def": 25,
+      "speed": 20
   },
   {
     "id": 40,
     "name": "Wigglytuff",
-    "type": [
+    "element": [
       "Normal",
       "Fairy"
     ],
-      "HP": 140,
-      "Attack": 70,
-      "Defense": 45,
-      "Sp. Attack": 85,
-      "Sp. Defense": 50,
-      "Speed": 45
+      "hp": 140,
+      "attack": 70,
+      "defense": 45,
+      "spec_atk": 85,
+      "spec_def": 50,
+      "speed": 45
   },
   {
     "id": 41,
     "name": "Zubat",
-    "type": [
+    "element": [
       "Poison",
       "Flying"
     ],
-      "HP": 40,
-      "Attack": 45,
-      "Defense": 35,
-      "Sp. Attack": 30,
-      "Sp. Defense": 40,
-      "Speed": 55
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spec_atk": 30,
+      "spec_def": 40,
+      "speed": 55
   },
   {
     "id": 42,
     "name": "Golbat",
-    "type": [
+    "element": [
       "Poison",
       "Flying"
     ],
-      "HP": 75,
-      "Attack": 80,
-      "Defense": 70,
-      "Sp. Attack": 65,
-      "Sp. Defense": 75,
-      "Speed": 90
+      "hp": 75,
+      "attack": 80,
+      "defense": 70,
+      "spec_atk": 65,
+      "spec_def": 75,
+      "speed": 90
   },
   {
     "id": 43,
     "name":"Oddish",
-    "type": [
+    "element": [
       "Grass",
       "Poison"
     ],
-      "HP": 45,
-      "Attack": 50,
-      "Defense": 55,
-      "Sp. Attack": 75,
-      "Sp. Defense": 65,
-      "Speed": 30
+      "hp": 45,
+      "attack": 50,
+      "defense": 55,
+      "spec_atk": 75,
+      "spec_def": 65,
+      "speed": 30
   },
   {
     "id": 44,
     "name": "Gloom",
-    "type": [
+    "element": [
       "Grass",
       "Poison"
     ],
-      "HP": 60,
-      "Attack": 65,
-      "Defense": 70,
-      "Sp. Attack": 85,
-      "Sp. Defense": 75,
-      "Speed": 40
+      "hp": 60,
+      "attack": 65,
+      "defense": 70,
+      "spec_atk": 85,
+      "spec_def": 75,
+      "speed": 40
   },
   {
     "id": 45,
     "name": "Vileplume",
-    "type": [
+    "element": [
       "Grass",
       "Poison"
     ],
-      "HP": 75,
-      "Attack": 80,
-      "Defense": 85,
-      "Sp. Attack": 110,
-      "Sp. Defense": 90,
-      "Speed": 50
+      "hp": 75,
+      "attack": 80,
+      "defense": 85,
+      "spec_atk": 110,
+      "spec_def": 90,
+      "speed": 50
   },
   {
     "id": 46,
     "name": "Paras",
-    "type": [
+    "element": [
       "Bug",
       "Grass"
     ],
-      "HP": 35,
-      "Attack": 70,
-      "Defense": 55,
-      "Sp. Attack": 45,
-      "Sp. Defense": 55,
-      "Speed": 25
+      "hp": 35,
+      "attack": 70,
+      "defense": 55,
+      "spec_atk": 45,
+      "spec_def": 55,
+      "speed": 25
   },
   {
     "id": 47,
     "name": "Parasect",
-    "type": [
+    "element": [
       "Bug",
       "Grass"
     ],
-      "HP": 60,
-      "Attack": 95,
-      "Defense": 80,
-      "Sp. Attack": 60,
-      "Sp. Defense": 80,
-      "Speed": 30
+      "hp": 60,
+      "attack": 95,
+      "defense": 80,
+      "spec_atk": 60,
+      "spec_def": 80,
+      "speed": 30
   },
   {
     "id": 48,
     "name": "Venonat",
-    "type": [
+    "element": [
       "Bug",
       "Poison"
     ],
-      "HP": 60,
-      "Attack": 55,
-      "Defense": 50,
-      "Sp. Attack": 40,
-      "Sp. Defense": 55,
-      "Speed": 45
+      "hp": 60,
+      "attack": 55,
+      "defense": 50,
+      "spec_atk": 40,
+      "spec_def": 55,
+      "speed": 45
   },
   {
     "id": 49,
     "name": "Venomoth",
-    "type": [
+    "element": [
       "Bug",
       "Poison"
     ],
-      "HP": 70,
-      "Attack": 65,
-      "Defense": 60,
-      "Sp. Attack": 90,
-      "Sp. Defense": 75,
-      "Speed": 90
+      "hp": 70,
+      "attack": 65,
+      "defense": 60,
+      "spec_atk": 90,
+      "spec_def": 75,
+      "speed": 90
   },
   {
     "id": 50,
     "name": "Diglett",
-    "type": [
+    "element": [
       "Ground"
     ],
-      "HP": 10,
-      "Attack": 55,
-      "Defense": 25,
-      "Sp. Attack": 35,
-      "Sp. Defense": 45,
-      "Speed": 95
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "spec_atk": 35,
+      "spec_def": 45,
+      "speed": 95
   },
   {
     "id": 51,
     "name": "Dugtrio",
-    "type": [
+    "element": [
       "Ground"
     ],
-      "HP": 35,
-      "Attack": 100,
-      "Defense": 50,
-      "Sp. Attack": 50,
-      "Sp. Defense": 70,
-      "Speed": 120
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "spec_atk": 50,
+      "spec_def": 70,
+      "speed": 120
   },
   {
     "id": 52,
     "name": "Meowth",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 40,
-      "Attack": 45,
-      "Defense": 35,
-      "Sp. Attack": 40,
-      "Sp. Defense": 40,
-      "Speed": 90
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spec_atk": 40,
+      "spec_def": 40,
+      "speed": 90
   },
   {
     "id": 53,
     "name": "Persian",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 65,
-      "Attack": 70,
-      "Defense": 60,
-      "Sp. Attack": 65,
-      "Sp. Defense": 65,
-      "Speed": 115
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "spec_atk": 65,
+      "spec_def": 65,
+      "speed": 115
   },
   {
     "id": 54,
     "name": "Psyduck",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 50,
-      "Attack": 52,
-      "Defense": 48,
-      "Sp. Attack": 65,
-      "Sp. Defense": 50,
-      "Speed": 55
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "spec_atk": 65,
+      "spec_def": 50,
+      "speed": 55
   },
   {
     "id": 55,
     "name": "Golduck",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 80,
-      "Attack": 82,
-      "Defense": 78,
-      "Sp. Attack": 95,
-      "Sp. Defense": 80,
-      "Speed": 85
+      "hp": 80,
+      "attack": 82,
+      "defense": 78,
+      "spec_atk": 95,
+      "spec_def": 80,
+      "speed": 85
   },
   {
     "id": 56,
     "name": "Mankey",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 40,
-      "Attack": 80,
-      "Defense": 35,
-      "Sp. Attack": 35,
-      "Sp. Defense": 45,
-      "Speed": 70
+      "hp": 40,
+      "attack": 80,
+      "defense": 35,
+      "spec_atk": 35,
+      "spec_def": 45,
+      "speed": 70
   },
   {
     "id": 57,
     "name": "Primeape",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 65,
-      "Attack": 105,
-      "Defense": 60,
-      "Sp. Attack": 60,
-      "Sp. Defense": 70,
-      "Speed": 95
+      "hp": 65,
+      "attack": 105,
+      "defense": 60,
+      "spec_atk": 60,
+      "spec_def": 70,
+      "speed": 95
   },
   {
     "id": 58,
     "name": "Growlithe",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 55,
-      "Attack": 70,
-      "Defense": 45,
-      "Sp. Attack": 70,
-      "Sp. Defense": 50,
-      "Speed": 60
+      "hp": 55,
+      "attack": 70,
+      "defense": 45,
+      "spec_atk": 70,
+      "spec_def": 50,
+      "speed": 60
   },
   {
     "id": 59,
     "name": "Arcanine",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 90,
-      "Attack": 110,
-      "Defense": 80,
-      "Sp. Attack": 100,
-      "Sp. Defense": 80,
-      "Speed": 95
+      "hp": 90,
+      "attack": 110,
+      "defense": 80,
+      "spec_atk": 100,
+      "spec_def": 80,
+      "speed": 95
   },
   {
     "id": 60,
     "name": "Poliwag",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 40,
-      "Attack": 50,
-      "Defense": 40,
-      "Sp. Attack": 40,
-      "Sp. Defense": 40,
-      "Speed": 90
+      "hp": 40,
+      "attack": 50,
+      "defense": 40,
+      "spec_atk": 40,
+      "spec_def": 40,
+      "speed": 90
   },
   {
     "id": 61,
     "name": "Poliwhirl",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 65,
-      "Attack": 65,
-      "Defense": 65,
-      "Sp. Attack": 50,
-      "Sp. Defense": 50,
-      "Speed": 90
+      "hp": 65,
+      "attack": 65,
+      "defense": 65,
+      "spec_atk": 50,
+      "spec_def": 50,
+      "speed": 90
   },
   {
     "id": 62,
     "name": "Poliwrath",
-    "type": [
+    "element": [
       "Water",
       "Fighting"
     ],
-      "HP": 90,
-      "Attack": 95,
-      "Defense": 95,
-      "Sp. Attack": 70,
-      "Sp. Defense": 90,
-      "Speed": 70
+      "hp": 90,
+      "attack": 95,
+      "defense": 95,
+      "spec_atk": 70,
+      "spec_def": 90,
+      "speed": 70
   },
   {
     "id": 63,
     "name": "Abra",
-    "type": [
+    "element": [
       "Psychic"
     ],
-      "HP": 25,
-      "Attack": 20,
-      "Defense": 15,
-      "Sp. Attack": 105,
-      "Sp. Defense": 55,
-      "Speed": 90
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "spec_atk": 105,
+      "spec_def": 55,
+      "speed": 90
   },
   {
     "id": 64,
     "name": "Kadabra",
-    "type": [
+    "element": [
       "Psychic"
     ],
-      "HP": 40,
-      "Attack": 35,
-      "Defense": 30,
-      "Sp. Attack": 120,
-      "Sp. Defense": 70,
-      "Speed": 105
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "spec_atk": 120,
+      "spec_def": 70,
+      "speed": 105
   },
   {
     "id": 65,
     "name": "Alakazam",
-    "type": [
+    "element": [
       "Psychic"
     ],
-      "HP": 55,
-      "Attack": 50,
-      "Defense": 45,
-      "Sp. Attack": 135,
-      "Sp. Defense": 95,
-      "Speed": 120
+      "hp": 55,
+      "attack": 50,
+      "defense": 45,
+      "spec_atk": 135,
+      "spec_def": 95,
+      "speed": 120
   },
   {
     "id": 66,
     "name": "Machop",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 70,
-      "Attack": 80,
-      "Defense": 50,
-      "Sp. Attack": 35,
-      "Sp. Defense": 35,
-      "Speed": 35
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "spec_atk": 35,
+      "spec_def": 35,
+      "speed": 35
   },
   {
     "id": 67,
     "name": "Machoke",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 80,
-      "Attack": 100,
-      "Defense": 70,
-      "Sp. Attack": 50,
-      "Sp. Defense": 60,
-      "Speed": 45
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "spec_atk": 50,
+      "spec_def": 60,
+      "speed": 45
   },
   {
     "id": 68,
     "name": "Machamp",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 90,
-      "Attack": 130,
-      "Defense": 80,
-      "Sp. Attack": 65,
-      "Sp. Defense": 85,
-      "Speed": 55
+      "hp": 90,
+      "attack": 130,
+      "defense": 80,
+      "spec_atk": 65,
+      "spec_def": 85,
+      "speed": 55
   },
   {
     "id": 69,
     "name": "Bellsprout",
-    "type": [
+    "element": [
       "Grass",
       "Poison"
     ],
-      "HP": 50,
-      "Attack": 75,
-      "Defense": 35,
-      "Sp. Attack": 70,
-      "Sp. Defense": 30,
-      "Speed": 40
+      "hp": 50,
+      "attack": 75,
+      "defense": 35,
+      "spec_atk": 70,
+      "spec_def": 30,
+      "speed": 40
   },
   {
     "id": 70,
     "name": "Weepinbell",
-    "type": [
+    "element": [
       "Grass",
       "Poison"
     ],
-      "HP": 65,
-      "Attack": 90,
-      "Defense": 50,
-      "Sp. Attack": 85,
-      "Sp. Defense": 45,
-      "Speed": 55
+      "hp": 65,
+      "attack": 90,
+      "defense": 50,
+      "spec_atk": 85,
+      "spec_def": 45,
+      "speed": 55
   },
   {
     "id": 71,
     "name": "Victreebel",
-    "type": [
+    "element": [
       "Grass",
       "Poison"
     ],
-      "HP": 80,
-      "Attack": 105,
-      "Defense": 65,
-      "Sp. Attack": 100,
-      "Sp. Defense": 70,
-      "Speed": 70
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "spec_atk": 100,
+      "spec_def": 70,
+      "speed": 70
   },
   {
     "id": 72,
     "name": "Tentacool",
-    "type": [
+    "element": [
       "Water",
       "Poison"
     ],
-      "HP": 40,
-      "Attack": 40,
-      "Defense": 35,
-      "Sp. Attack": 50,
-      "Sp. Defense": 100,
-      "Speed": 70
+      "hp": 40,
+      "attack": 40,
+      "defense": 35,
+      "spec_atk": 50,
+      "spec_def": 100,
+      "speed": 70
   },
   {
     "id": 73,
     "name": "Tentacruel",
-    "type": [
+    "element": [
       "Water",
       "Poison"
     ],
-      "HP": 80,
-      "Attack": 70,
-      "Defense": 65,
-      "Sp. Attack": 80,
-      "Sp. Defense": 120,
-      "Speed": 100
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "spec_atk": 80,
+      "spec_def": 120,
+      "speed": 100
   },
   {
     "id": 74,
     "name": "Geodude",
-    "type": [
+    "element": [
       "Rock",
       "Ground"
     ],
-      "HP": 40,
-      "Attack": 80,
-      "Defense": 100,
-      "Sp. Attack": 30,
-      "Sp. Defense": 30,
-      "Speed": 20
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "spec_atk": 30,
+      "spec_def": 30,
+      "speed": 20
   },
   {
     "id": 75,
     "name": "Graveler",
-    "type": [
+    "element": [
       "Rock",
       "Ground"
     ],
-      "HP": 55,
-      "Attack": 95,
-      "Defense": 115,
-      "Sp. Attack": 45,
-      "Sp. Defense": 45,
-      "Speed": 35
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "spec_atk": 45,
+      "spec_def": 45,
+      "speed": 35
   },
   {
     "id": 76,
     "name": "Golem",
-    "type": [
+    "element": [
       "Rock",
       "Ground"
     ],
-      "HP": 80,
-      "Attack": 120,
-      "Defense": 130,
-      "Sp. Attack": 55,
-      "Sp. Defense": 65,
-      "Speed": 45
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "spec_atk": 55,
+      "spec_def": 65,
+      "speed": 45
   },
   {
     "id": 77,
     "name": "Ponyta",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 50,
-      "Attack": 85,
-      "Defense": 55,
-      "Sp. Attack": 65,
-      "Sp. Defense": 65,
-      "Speed": 90
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "spec_atk": 65,
+      "spec_def": 65,
+      "speed": 90
   },
   {
     "id": 78,
     "name": "Rapidash",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 65,
-      "Attack": 100,
-      "Defense": 70,
-      "Sp. Attack": 80,
-      "Sp. Defense": 80,
-      "Speed": 105
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "spec_atk": 80,
+      "spec_def": 80,
+      "speed": 105
   },
   {
     "id": 79,
     "name": "Slowpoke",
-    "type": [
+    "element": [
       "Water",
       "Psychic"
     ],
-      "HP": 90,
-      "Attack": 65,
-      "Defense": 65,
-      "Sp. Attack": 40,
-      "Sp. Defense": 40,
-      "Speed": 15
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "spec_atk": 40,
+      "spec_def": 40,
+      "speed": 15
   },
   {
     "id": 80,
     "name": "Slowbro",
-    "type": [
+    "element": [
       "Water",
       "Psychic"
     ],
-      "HP": 95,
-      "Attack": 75,
-      "Defense": 110,
-      "Sp. Attack": 100,
-      "Sp. Defense": 80,
-      "Speed": 30
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "spec_atk": 100,
+      "spec_def": 80,
+      "speed": 30
   },
   {
     "id": 81,
     "name": "Magnemite",
-    "type": [
+    "element": [
       "Electric",
       "Steel"
     ],
-      "HP": 25,
-      "Attack": 35,
-      "Defense": 70,
-      "Sp. Attack": 95,
-      "Sp. Defense": 55,
-      "Speed": 45
+      "hp": 25,
+      "attack": 35,
+      "defense": 70,
+      "spec_atk": 95,
+      "spec_def": 55,
+      "speed": 45
   },
   {
     "id": 82,
     "name": "Magneton",
-    "type": [
+    "element": [
       "Electric",
       "Steel"
     ],
-      "HP": 50,
-      "Attack": 60,
-      "Defense": 95,
-      "Sp. Attack": 120,
-      "Sp. Defense": 70,
-      "Speed": 70
+      "hp": 50,
+      "attack": 60,
+      "defense": 95,
+      "spec_atk": 120,
+      "spec_def": 70,
+      "speed": 70
   },
   {
     "id": 83,
     "name":"Farfetch'd",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 52,
-      "Attack": 90,
-      "Defense": 55,
-      "Sp. Attack": 58,
-      "Sp. Defense": 62,
-      "Speed": 60
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "spec_atk": 58,
+      "spec_def": 62,
+      "speed": 60
   },
   {
     "id": 84,
     "name": "Doduo",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 35,
-      "Attack": 85,
-      "Defense": 45,
-      "Sp. Attack": 35,
-      "Sp. Defense": 35,
-      "Speed": 75
+      "hp": 35,
+      "attack": 85,
+      "defense": 45,
+      "spec_atk": 35,
+      "spec_def": 35,
+      "speed": 75
   },
   {
     "id": 85,
     "name": "Dodrio",
-    "type": [
+    "element": [
       "Normal",
       "Flying"
     ],
-      "HP": 60,
-      "Attack": 110,
-      "Defense": 70,
-      "Sp. Attack": 60,
-      "Sp. Defense": 60,
-      "Speed": 110
+      "hp": 60,
+      "attack": 110,
+      "defense": 70,
+      "spec_atk": 60,
+      "spec_def": 60,
+      "speed": 110
   },
   {
     "id": 86,
     "name": "Seel",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 65,
-      "Attack": 45,
-      "Defense": 55,
-      "Sp. Attack": 45,
-      "Sp. Defense": 70,
-      "Speed": 45
+      "hp": 65,
+      "attack": 45,
+      "defense": 55,
+      "spec_atk": 45,
+      "spec_def": 70,
+      "speed": 45
   },
   {
     "id": 87,
     "name": "Dewgong",
-    "type": [
+    "element": [
       "Water",
       "Ice"
     ],
-      "HP": 90,
-      "Attack": 70,
-      "Defense": 80,
-      "Sp. Attack": 70,
-      "Sp. Defense": 95,
-      "Speed": 70
+      "hp": 90,
+      "attack": 70,
+      "defense": 80,
+      "spec_atk": 70,
+      "spec_def": 95,
+      "speed": 70
   },
   {
     "id": 88,
     "name": "Grimer",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 80,
-      "Attack": 80,
-      "Defense": 50,
-      "Sp. Attack": 40,
-      "Sp. Defense": 50,
-      "Speed": 25
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "spec_atk": 40,
+      "spec_def": 50,
+      "speed": 25
   },
   {
     "id": 89,
     "name": "Muk",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 105,
-      "Attack": 105,
-      "Defense": 75,
-      "Sp. Attack": 65,
-      "Sp. Defense": 100,
-      "Speed": 50
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "spec_atk": 65,
+      "spec_def": 100,
+      "speed": 50
   },
   {
     "id": 90,
     "name": "Shellder",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 30,
-      "Attack": 65,
-      "Defense": 100,
-      "Sp. Attack": 45,
-      "Sp. Defense": 25,
-      "Speed": 40
+      "hp": 30,
+      "attack": 65,
+      "defense": 100,
+      "spec_atk": 45,
+      "spec_def": 25,
+      "speed": 40
   },
   {
     "id": 91,
     "name": "Cloyster",
-    "type": [
+    "element": [
       "Water",
       "Ice"
     ],
-      "HP": 50,
-      "Attack": 95,
-      "Defense": 180,
-      "Sp. Attack": 85,
-      "Sp. Defense": 45,
-      "Speed": 70
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "spec_atk": 85,
+      "spec_def": 45,
+      "speed": 70
   },
   {
     "id": 92,
     "name": "Gastly",
-    "type": [
+    "element": [
       "Ghost",
       "Poison"
     ],
-      "HP": 30,
-      "Attack": 35,
-      "Defense": 30,
-      "Sp. Attack": 100,
-      "Sp. Defense": 35,
-      "Speed": 80
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "spec_atk": 100,
+      "spec_def": 35,
+      "speed": 80
   },
   {
     "id": 93,
     "name": "Haunter",
-    "type": [
+    "element": [
       "Ghost",
       "Poison"
     ],
-      "HP": 45,
-      "Attack": 50,
-      "Defense": 45,
-      "Sp. Attack": 115,
-      "Sp. Defense": 55,
-      "Speed": 95
+      "hp": 45,
+      "attack": 50,
+      "defense": 45,
+      "spec_atk": 115,
+      "spec_def": 55,
+      "speed": 95
     
   },
   {
     "id": 94,
     "name": "Gengar",
-    "type": [
+    "element": [
       "Ghost",
       "Poison"
     ],
-      "HP": 60,
-      "Attack": 65,
-      "Defense": 60,
-      "Sp. Attack": 130,
-      "Sp. Defense": 75,
-      "Speed": 110
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "spec_atk": 130,
+      "spec_def": 75,
+      "speed": 110
     
   },
   {
     "id": 95,
     "name": "Onix",
-    "type": [
+    "element": [
       "Rock",
       "Ground"
     ],
-      "HP": 35,
-      "Attack": 45,
-      "Defense": 160,
-      "Sp. Attack": 30,
-      "Sp. Defense": 45,
-      "Speed": 70
+      "hp": 35,
+      "attack": 45,
+      "defense": 160,
+      "spec_atk": 30,
+      "spec_def": 45,
+      "speed": 70
     
   },
   {
     "id": 96,
     "name": "Drowzee",
-    "type": [
+    "element": [
       "Psychic"
     ],
-      "HP": 60,
-      "Attack": 48,
-      "Defense": 45,
-      "Sp. Attack": 43,
-      "Sp. Defense": 90,
-      "Speed": 42
+      "hp": 60,
+      "attack": 48,
+      "defense": 45,
+      "spec_atk": 43,
+      "spec_def": 90,
+      "speed": 42
     
   },
   {
     "id": 97,
     "name": "Hypno",
-    "type": [
+    "element": [
       "Psychic"
     ],
-      "HP": 85,
-      "Attack": 73,
-      "Defense": 70,
-      "Sp. Attack": 73,
-      "Sp. Defense": 115,
-      "Speed": 67
+      "hp": 85,
+      "attack": 73,
+      "defense": 70,
+      "spec_atk": 73,
+      "spec_def": 115,
+      "speed": 67
     
   },
   {
     "id": 98,
     "name": "Krabby",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 30,
-      "Attack": 105,
-      "Defense": 90,
-      "Sp. Attack": 25,
-      "Sp. Defense": 25,
-      "Speed": 50
+      "hp": 30,
+      "attack": 105,
+      "defense": 90,
+      "spec_atk": 25,
+      "spec_def": 25,
+      "speed": 50
     
   },
   {
     "id": 99,
     "name": "Kingler",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 55,
-      "Attack": 130,
-      "Defense": 115,
-      "Sp. Attack": 50,
-      "Sp. Defense": 50,
-      "Speed": 75
+      "hp": 55,
+      "attack": 130,
+      "defense": 115,
+      "spec_atk": 50,
+      "spec_def": 50,
+      "speed": 75
     
   },
   {
     "id": 100,
     "name": "Voltorb",
-    "type": [
+    "element": [
       "Electric"
     ],
-      "HP": 40,
-      "Attack": 30,
-      "Defense": 50,
-      "Sp. Attack": 55,
-      "Sp. Defense": 55,
-      "Speed": 100
+      "hp": 40,
+      "attack": 30,
+      "defense": 50,
+      "spec_atk": 55,
+      "spec_def": 55,
+      "speed": 100
     
   },
   {
     "id": 101,
     "name": "Electrode",
-    "type": [
+    "element": [
       "Electric"
     ],
-      "HP": 60,
-      "Attack": 50,
-      "Defense": 70,
-      "Sp. Attack": 80,
-      "Sp. Defense": 80,
-      "Speed": 150
+      "hp": 60,
+      "attack": 50,
+      "defense": 70,
+      "spec_atk": 80,
+      "spec_def": 80,
+      "speed": 150
     
   },
   {
     "id": 102,
     "name": "Exeggcute",
-    "type": [
+    "element": [
       "Grass",
       "Psychic"
     ],
-      "HP": 60,
-      "Attack": 40,
-      "Defense": 80,
-      "Sp. Attack": 60,
-      "Sp. Defense": 45,
-      "Speed": 40
+      "hp": 60,
+      "attack": 40,
+      "defense": 80,
+      "spec_atk": 60,
+      "spec_def": 45,
+      "speed": 40
     
   },
   {
     "id": 103,
     "name": "Exeggutor",
-    "type": [
+    "element": [
       "Grass",
       "Psychic"
     ],
-      "HP": 95,
-      "Attack": 95,
-      "Defense": 85,
-      "Sp. Attack": 125,
-      "Sp. Defense": 75,
-      "Speed": 55
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "spec_atk": 125,
+      "spec_def": 75,
+      "speed": 55
     
   },
   {
     "id": 104,
     "name": "Cubone",
-    "type": [
+    "element": [
       "Ground"
     ],
-      "HP": 50,
-      "Attack": 50,
-      "Defense": 95,
-      "Sp. Attack": 40,
-      "Sp. Defense": 50,
-      "Speed": 35
+      "hp": 50,
+      "attack": 50,
+      "defense": 95,
+      "spec_atk": 40,
+      "spec_def": 50,
+      "speed": 35
     
   },
   {
     "id": 105,
     "name": "Marowak",
-    "type": [
+    "element": [
       "Ground"
     ],
-      "HP": 60,
-      "Attack": 80,
-      "Defense": 110,
-      "Sp. Attack": 50,
-      "Sp. Defense": 80,
-      "Speed": 45
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "spec_atk": 50,
+      "spec_def": 80,
+      "speed": 45
     
   },
   {
     "id": 106,
     "name": "Hitmonlee",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 50,
-      "Attack": 120,
-      "Defense": 53,
-      "Sp. Attack": 35,
-      "Sp. Defense": 110,
-      "Speed": 87
+      "hp": 50,
+      "attack": 120,
+      "defense": 53,
+      "spec_atk": 35,
+      "spec_def": 110,
+      "speed": 87
     
   },
   {
     "id": 107,
     "name": "Hitmonchan",
-    "type": [
+    "element": [
       "Fighting"
     ],
-      "HP": 50,
-      "Attack": 105,
-      "Defense": 79,
-      "Sp. Attack": 35,
-      "Sp. Defense": 110,
-      "Speed": 76
+      "hp": 50,
+      "attack": 105,
+      "defense": 79,
+      "spec_atk": 35,
+      "spec_def": 110,
+      "speed": 76
     
   },
   {
     "id": 108,
     "name": "Lickitung",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 90,
-      "Attack": 55,
-      "Defense": 75,
-      "Sp. Attack": 60,
-      "Sp. Defense": 75,
-      "Speed": 30
+      "hp": 90,
+      "attack": 55,
+      "defense": 75,
+      "spec_atk": 60,
+      "spec_def": 75,
+      "speed": 30
     
   },
   {
     "id": 109,
     "name": "Koffing",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 40,
-      "Attack": 65,
-      "Defense": 95,
-      "Sp. Attack": 60,
-      "Sp. Defense": 45,
-      "Speed": 35
+      "hp": 40,
+      "attack": 65,
+      "defense": 95,
+      "spec_atk": 60,
+      "spec_def": 45,
+      "speed": 35
     
   },
   {
     "id": 110,
     "name": "Weezing",
-    "type": [
+    "element": [
       "Poison"
     ],
-      "HP": 65,
-      "Attack": 90,
-      "Defense": 120,
-      "Sp. Attack": 85,
-      "Sp. Defense": 70,
-      "Speed": 60
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "spec_atk": 85,
+      "spec_def": 70,
+      "speed": 60
     
   },
   {
     "id": 111,
     "name": "Rhyhorn",
-    "type": [
+    "element": [
       "Ground",
       "Rock"
     ],
-      "HP": 80,
-      "Attack": 85,
-      "Defense": 95,
-      "Sp. Attack": 30,
-      "Sp. Defense": 30,
-      "Speed": 25
+      "hp": 80,
+      "attack": 85,
+      "defense": 95,
+      "spec_atk": 30,
+      "spec_def": 30,
+      "speed": 25
   },
   {
     "id": 112,
     "name": "Rhydon",
-    "type": [
+    "element": [
       "Ground",
       "Rock"
     ],
-      "HP": 105,
-      "Attack": 130,
-      "Defense": 120,
-      "Sp. Attack": 45,
-      "Sp. Defense": 45,
-      "Speed": 40
+      "hp": 105,
+      "attack": 130,
+      "defense": 120,
+      "spec_atk": 45,
+      "spec_def": 45,
+      "speed": 40
     
   },
   {
     "id": 113,
     "name": "Chansey",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 250,
-      "Attack": 5,
-      "Defense": 5,
-      "Sp. Attack": 35,
-      "Sp. Defense": 105,
-      "Speed": 50
+      "hp": 250,
+      "attack": 5,
+      "defense": 5,
+      "spec_atk": 35,
+      "spec_def": 105,
+      "speed": 50
     
   },
   {
     "id": 114,
     "name": "Tangela",
-    "type": [
+    "element": [
       "Grass"
-    ],"HP": 65,
-      "Attack": 55,
-      "Defense": 115,
-      "Sp. Attack": 100,
-      "Sp. Defense": 40,
-      "Speed": 60
+    ],"hp": 65,
+      "attack": 55,
+      "defense": 115,
+      "spec_atk": 100,
+      "spec_def": 40,
+      "speed": 60
   },
   {
     "id": 115,
     "name": "Kangaskhan",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 105,
-      "Attack": 95,
-      "Defense": 80,
-      "Sp. Attack": 40,
-      "Sp. Defense": 80,
-      "Speed": 90
+      "hp": 105,
+      "attack": 95,
+      "defense": 80,
+      "spec_atk": 40,
+      "spec_def": 80,
+      "speed": 90
     
   },
   {
     "id": 116,
     "name": "Horsea",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 30,
-      "Attack": 40,
-      "Defense": 70,
-      "Sp. Attack": 70,
-      "Sp. Defense": 25,
-      "Speed": 60
+      "hp": 30,
+      "attack": 40,
+      "defense": 70,
+      "spec_atk": 70,
+      "spec_def": 25,
+      "speed": 60
     
   },
   {
     "id": 117,
     "name": "Seadra",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 55,
-      "Attack": 65,
-      "Defense": 95,
-      "Sp. Attack": 95,
-      "Sp. Defense": 45,
-      "Speed": 85
+      "hp": 55,
+      "attack": 65,
+      "defense": 95,
+      "spec_atk": 95,
+      "spec_def": 45,
+      "speed": 85
     
   },
   {
     "id": 118,
     "name": "Goldeen",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 45,
-      "Attack": 67,
-      "Defense": 60,
-      "Sp. Attack": 35,
-      "Sp. Defense": 50,
-      "Speed": 63
+      "hp": 45,
+      "attack": 67,
+      "defense": 60,
+      "spec_atk": 35,
+      "spec_def": 50,
+      "speed": 63
   },
   {
     "id": 119,
     "name": "Seaking",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 80,
-      "Attack": 92,
-      "Defense": 65,
-      "Sp. Attack": 65,
-      "Sp. Defense": 80,
-      "Speed": 68
+      "hp": 80,
+      "attack": 92,
+      "defense": 65,
+      "spec_atk": 65,
+      "spec_def": 80,
+      "speed": 68
     
   },
   {
     "id": 120,
     "name": "Staryu",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 30,
-      "Attack": 45,
-      "Defense": 55,
-      "Sp. Attack": 70,
-      "Sp. Defense": 55,
-      "Speed": 85
+      "hp": 30,
+      "attack": 45,
+      "defense": 55,
+      "spec_atk": 70,
+      "spec_def": 55,
+      "speed": 85
   },
   {
     "id": 121,
     "name": "Starmie",
-    "type": [
+    "element": [
       "Water",
       "Psychic"
     ],
-      "HP": 60,
-      "Attack": 75,
-      "Defense": 85,
-      "Sp. Attack": 100,
-      "Sp. Defense": 85,
-      "Speed": 115
+      "hp": 60,
+      "attack": 75,
+      "defense": 85,
+      "spec_atk": 100,
+      "spec_def": 85,
+      "speed": 115
   },
   {
     "id": 122,
     "name": "Mr. Mime",
-    "type": [
+    "element": [
       "Psychic"],
-      "HP": 40,
-      "Attack": 45,
-      "Defense": 65,
-      "Sp. Attack": 100,
-      "Sp. Defense": 120,
-      "Speed": 90
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "spec_atk": 100,
+      "spec_def": 120,
+      "speed": 90
     
   },
   {
     "id": 123,
     "name": "Scyther",
-    "type": [
+    "element": [
       "Bug",
       "Flying"
     ],
-      "HP": 70,
-      "Attack": 110,
-      "Defense": 80,
-      "Sp. Attack": 55,
-      "Sp. Defense": 80,
-      "Speed": 105
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "spec_atk": 55,
+      "spec_def": 80,
+      "speed": 105
     
   },
   {
     "id": 124,
     "name": "Jynx",
-    "type": [
+    "element": [
       "Ice",
       "Psychic"
     ],
-      "HP": 65,
-      "Attack": 50,
-      "Defense": 35,
-      "Sp. Attack": 115,
-      "Sp. Defense": 95,
-      "Speed": 95
+      "hp": 65,
+      "attack": 50,
+      "defense": 35,
+      "spec_atk": 115,
+      "spec_def": 95,
+      "speed": 95
     
   },
   {
     "id": 125,
     "name": "Electabuzz",
-    "type": [
+    "element": [
       "Electric"
     ],
-      "HP": 65,
-      "Attack": 83,
-      "Defense": 57,
-      "Sp. Attack": 95,
-      "Sp. Defense": 85,
-      "Speed": 105
+      "hp": 65,
+      "attack": 83,
+      "defense": 57,
+      "spec_atk": 95,
+      "spec_def": 85,
+      "speed": 105
   },
   {
     "id": 126,
     "name": "Magmar",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 65,
-      "Attack": 95,
-      "Defense": 57,
-      "Sp. Attack": 100,
-      "Sp. Defense": 85,
-      "Speed": 93
+      "hp": 65,
+      "attack": 95,
+      "defense": 57,
+      "spec_atk": 100,
+      "spec_def": 85,
+      "speed": 93
     
   },
   {
     "id": 127,
     "name": "Pinsir",
-    "type": [
+    "element": [
       "Bug"
     ],
-      "HP": 65,
-      "Attack": 125,
-      "Defense": 100,
-      "Sp. Attack": 55,
-      "Sp. Defense": 70,
-      "Speed": 85
+      "hp": 65,
+      "attack": 125,
+      "defense": 100,
+      "spec_atk": 55,
+      "spec_def": 70,
+      "speed": 85
     
   },
   {
     "id": 128,
     "name": "Tauros",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 75,
-      "Attack": 100,
-      "Defense": 95,
-      "Sp. Attack": 40,
-      "Sp. Defense": 70,
-      "Speed": 110
+      "hp": 75,
+      "attack": 100,
+      "defense": 95,
+      "spec_atk": 40,
+      "spec_def": 70,
+      "speed": 110
   },
   {
     "id": 129,
     "name": "Magikarp",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 20,
-      "Attack": 10,
-      "Defense": 55,
-      "Sp. Attack": 15,
-      "Sp. Defense": 20,
-      "Speed": 80
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "spec_atk": 15,
+      "spec_def": 20,
+      "speed": 80
     
   },
   {
     "id": 130,
     "name": "Gyarados",
-    "type": [
+    "element": [
       "Water",
       "Flying"
     ],
-      "HP": 95,
-      "Attack": 125,
-      "Defense": 79,
-      "Sp. Attack": 60,
-      "Sp. Defense": 100,
-      "Speed": 81
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "spec_atk": 60,
+      "spec_def": 100,
+      "speed": 81
     
   },
   {
     "id": 131,
     "name": "Lapras",
-    "type": [
+    "element": [
       "Water",
       "Ice"
     ],
-      "HP": 130,
-      "Attack": 85,
-      "Defense": 80,
-      "Sp. Attack": 85,
-      "Sp. Defense": 95,
-      "Speed": 60
+      "hp": 130,
+      "attack": 85,
+      "defense": 80,
+      "spec_atk": 85,
+      "spec_def": 95,
+      "speed": 60
     
   },
   {
     "id": 132,
     "name": "Ditto",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 48,
-      "Attack": 48,
-      "Defense": 48,
-      "Sp. Attack": 48,
-      "Sp. Defense": 48,
-      "Speed": 48
+      "hp": 48,
+      "attack": 48,
+      "defense": 48,
+      "spec_atk": 48,
+      "spec_def": 48,
+      "speed": 48
     
   },
   {
     "id": 133,
     "name": "Eevee",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 55,
-      "Attack": 55,
-      "Defense": 50,
-      "Sp. Attack": 45,
-      "Sp. Defense": 65,
-      "Speed": 55
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "spec_atk": 45,
+      "spec_def": 65,
+      "speed": 55
     
   },
   {
     "id": 134,
     "name": "Vaporeon",
-    "type": [
+    "element": [
       "Water"
     ],
-      "HP": 130,
-      "Attack": 65,
-      "Defense": 60,
-      "Sp. Attack": 110,
-      "Sp. Defense": 95,
-      "Speed": 65
+      "hp": 130,
+      "attack": 65,
+      "defense": 60,
+      "spec_atk": 110,
+      "spec_def": 95,
+      "speed": 65
     
   },
   {
     "id": 135,
     "name": "Jolteon",
-    "type": [
+    "element": [
       "Electric"
     ],
-      "HP": 65,
-      "Attack": 65,
-      "Defense": 60,
-      "Sp. Attack": 110,
-      "Sp. Defense": 95,
-      "Speed": 130
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "spec_atk": 110,
+      "spec_def": 95,
+      "speed": 130
   },
   {
     "id": 136,
     "name": "Flareon",
-    "type": [
+    "element": [
       "Fire"
     ],
-      "HP": 65,
-      "Attack": 130,
-      "Defense": 60,
-      "Sp. Attack": 95,
-      "Sp. Defense": 110,
-      "Speed": 65
+      "hp": 65,
+      "attack": 130,
+      "defense": 60,
+      "spec_atk": 95,
+      "spec_def": 110,
+      "speed": 65
     
   },
   {
     "id": 137,
     "name": "Porygon",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 65,
-      "Attack": 60,
-      "Defense": 70,
-      "Sp. Attack": 85,
-      "Sp. Defense": 75,
-      "Speed": 40
+      "hp": 65,
+      "attack": 60,
+      "defense": 70,
+      "spec_atk": 85,
+      "spec_def": 75,
+      "speed": 40
     
   },
   {
     "id": 138,
     "name": "Omanyte",
-    "type": [
+    "element": [
       "Rock",
       "Water"
     ],
-      "HP": 35,
-      "Attack": 40,
-      "Defense": 100,
-      "Sp. Attack": 90,
-      "Sp. Defense": 55,
-      "Speed": 35
+      "hp": 35,
+      "attack": 40,
+      "defense": 100,
+      "spec_atk": 90,
+      "spec_def": 55,
+      "speed": 35
   },
   {
     "id": 139,
     "name": "Omastar",
-    "type": [
+    "element": [
       "Rock",
       "Water"
     ],
-      "HP": 70,
-      "Attack": 60,
-      "Defense": 125,
-      "Sp. Attack": 115,
-      "Sp. Defense": 70,
-      "Speed": 55
+      "hp": 70,
+      "attack": 60,
+      "defense": 125,
+      "spec_atk": 115,
+      "spec_def": 70,
+      "speed": 55
     
   },
   {
     "id": 140,
     "name": "Kabuto",
-    "type": [
+    "element": [
       "Rock",
       "Water"
     ],
-      "HP": 30,
-      "Attack": 80,
-      "Defense": 90,
-      "Sp. Attack": 55,
-      "Sp. Defense": 45,
-      "Speed": 55
+      "hp": 30,
+      "attack": 80,
+      "defense": 90,
+      "spec_atk": 55,
+      "spec_def": 45,
+      "speed": 55
     
   },
   {
     "id": 141,
     "name": "Kabutops",
-    "type": [
+    "element": [
       "Rock",
       "Water"
     ],
-      "HP": 60,
-      "Attack": 115,
-      "Defense": 105,
-      "Sp. Attack": 65,
-      "Sp. Defense": 70,
-      "Speed": 80
+      "hp": 60,
+      "attack": 115,
+      "defense": 105,
+      "spec_atk": 65,
+      "spec_def": 70,
+      "speed": 80
     
   },
   {
     "id": 142,
     "name": "Aerodactyl",
-    "type": [
+    "element": [
       "Rock",
       "Flying"
     ],
-      "HP": 80,
-      "Attack": 105,
-      "Defense": 65,
-      "Sp. Attack": 60,
-      "Sp. Defense": 75,
-      "Speed": 130
+      "hp": 80,
+      "attack": 105,
+      "defense": 65,
+      "spec_atk": 60,
+      "spec_def": 75,
+      "speed": 130
     
   },
   {
     "id": 143,
     "name": "Snorlax",
-    "type": [
+    "element": [
       "Normal"
     ],
-      "HP": 160,
-      "Attack": 110,
-      "Defense": 65,
-      "Sp. Attack": 65,
-      "Sp. Defense": 110,
-      "Speed": 30
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "spec_atk": 65,
+      "spec_def": 110,
+      "speed": 30
     
   },
   {
     "id": 144,
     "name": "Articuno",
-    "type": [
+    "element": [
       "Ice",
       "Flying"
     ],
-      "HP": 90,
-      "Attack": 85,
-      "Defense": 100,
-      "Sp. Attack": 95,
-      "Sp. Defense": 125,
-      "Speed": 85
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "spec_atk": 95,
+      "spec_def": 125,
+      "speed": 85
     
   },
   {
     "id": 145,
     "name": "Zapdos",
-    "type": [
+    "element": [
       "Electric",
       "Flying"
     ],
-      "HP": 90,
-      "Attack": 90,
-      "Defense": 85,
-      "Sp. Attack": 125,
-      "Sp. Defense": 90,
-      "Speed": 100
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "spec_atk": 125,
+      "spec_def": 90,
+      "speed": 100
     
   },
   {
     "id": 146,
     "name": "Moltres",
-    "type": [
+    "element": [
       "Fire",
       "Flying"
     ],
-      "HP": 90,
-      "Attack": 100,
-      "Defense": 90,
-      "Sp. Attack": 125,
-      "Sp. Defense": 85,
-      "Speed": 90
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "spec_atk": 125,
+      "spec_def": 85,
+      "speed": 90
   },
   {
     "id": 147,
     "name": "Dratini",
-    "type": [
+    "element": [
       "Dragon"
     ],
-      "HP": 41,
-      "Attack": 64,
-      "Defense": 45,
-      "Sp. Attack": 50,
-      "Sp. Defense": 50,
-      "Speed": 50
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "spec_atk": 50,
+      "spec_def": 50,
+      "speed": 50
   },
   {
     "id": 148,
     "name": "Dragonair",
-    "type": [
+    "element": [
       "Dragon"
     ],
-      "HP": 61,
-      "Attack": 84,
-      "Defense": 65,
-      "Sp. Attack": 70,
-      "Sp. Defense": 70,
-      "Speed": 70
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "spec_atk": 70,
+      "spec_def": 70,
+      "speed": 70
     
   },
   {
     "id": 149,
     "name": "Dragonite",
-    "type": [
+    "element": [
       "Dragon",
       "Flying"
     ],
-      "HP": 91,
-      "Attack": 134,
-      "Defense": 95,
-      "Sp. Attack": 100,
-      "Sp. Defense": 100,
-      "Speed": 80
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "spec_atk": 100,
+      "spec_def": 100,
+      "speed": 80
   
   },
   {
     "id": 150,
     "name": "Mewtwo",
-    "type": [
+    "element": [
       "Psychic"
     ],
-      "HP": 106,
-      "Attack": 110,
-      "Defense": 90,
-      "Sp. Attack": 154,
-      "Sp. Defense": 90,
-      "Speed": 130
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "spec_atk": 154,
+      "spec_def": 90,
+      "speed": 130
     
   },
   {
     "id": 151,
     "name": "Mew",
-    "type": ["Psychic"],
-      "HP": 100,
-      "Attack": 100,
-      "Defense": 100,
-      "Sp. Attack": 100,
-      "Sp. Defense": 100,
-      "Speed": 100
+    "element": ["Psychic"],
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spec_atk": 100,
+      "spec_def": 100,
+      "speed": 100
   }
 ]

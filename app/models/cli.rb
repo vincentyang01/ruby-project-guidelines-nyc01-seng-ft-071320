@@ -1,5 +1,4 @@
 class CLI
-    # binding.pry
 puts "Hello1"
     def start
         user = Trainer.login

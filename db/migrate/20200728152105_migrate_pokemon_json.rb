@@ -2,7 +2,7 @@ class MigratePokemonJson < ActiveRecord::Migration[6.0]
   def change
     create_table :pokemon_species do |t|
       t.string :name 
-      t.string :type 
+      t.string :element 
       t.integer :hp 
       t.integer :attack 
       t.integer :defense
