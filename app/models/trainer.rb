@@ -9,7 +9,8 @@ class Trainer < ActiveRecord::Base
         
         First, what is your name?"
         name = gets.chomp
-        user = User.find_by(name: name)
+        puts "Hello"
+        user = User.find_by(name:name) #Breaking here because user doesn't exist
     end
 
     def addPokemonToTeam

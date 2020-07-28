@@ -1,11 +1,11 @@
-require_relative '../config/environment'
 require 'json'
 require 'pry'
+require_relative '../config/environment'
 
 
 
-# binding.pry
 cli = CLI.new
+binding.pry
 cli.start
 
 

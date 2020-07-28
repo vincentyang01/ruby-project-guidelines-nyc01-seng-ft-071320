@@ -1,6 +1,9 @@
 class CLI
+    # binding.pry
+    puts "Hello1"
     def start
-        user = User.login
+        user = Trainer.login
+        puts "Hello2"
         if user
             puts "Thank you for using the Pokemon simulator. 
             Please type in the name of a Pokemonn to add it to your team.
@@ -13,15 +16,16 @@ class CLI
             Enter 'hp > 60' to list all Pokemon with a base hp stat over 60."
 
             selection = gets.chomp
-            binding.pry
+            #binding.pry
             if selection == "all"
                 Pokemon.all.each do |pokemon|
                     puts pokemon.name
-            elsif selection == "all elements"   puts "in elements"
-            elsif selection == "stats"  puts "in stats"
-            elsif selection == "" puts "in element list" #if Pokemon.elements array includes selection, filter or map by selection puts
-            elsif selection == "" puts "in stat equality" #Filter by stat
-            elsif puts "Invalid entry. Please try again"
+                end
+            elsif selection == "all elements"   
+            elsif selection == "stats"  
+            elsif selection == ""  #if Pokemon.elements array includes selection, filter or map by selection puts
+            elsif selection == ""  #Filter by stat
+            elsif put "Invalid entry. Please try again"
             end
         end
         puts "This user does not"
