@@ -19,7 +19,7 @@ class Trainer < ActiveRecord::Base
         puts "found it"
         Instance.create(pokemon_species_id: pokemon.id, trainer_id: self.id, hp: pokemon.hp, atk: pokemon.attack, 
         def: pokemon.defense, spec_atk: pokemon.spec_atk, spec_def: pokemon.spec_def, speed: pokemon.speed)
-        binding.pry
+        # binding.pry
 
     end
     

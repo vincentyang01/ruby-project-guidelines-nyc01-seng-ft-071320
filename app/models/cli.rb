@@ -11,16 +11,18 @@ class CLI
             elementArray = ["grass", "poison", "fire", "flying", "water", "bug", "normal", "electric", "ground", "fighting", "psychic", "rock", "ghost", "dragon", "ice"].sort
             statsArray = ["hp", "attack", "defense", "spec_atk", "spec_def", "speed"]
 
-            puts "Thank you for using the Pokemon simulator. 
+            puts "Thank you for using the Pokemon simulator. \n\n
             Please type in the name of a Pokemonn to add it to your team.
 
             Please see the below options if you need to sift through all of the options.
             Enter 'all' to list all Pokemon.
             Enter 'elements' to list all elements.
             Enter 'stats' to list all Pokemon stat types.
-            Enter 'water' to list all Pokemon of that element.
+            Enter an element like 'water' to list all Pokemon of that element.
             Enter a stat to create a conditional.
             
+            Enter 'view' to view your current team.
+
             Enter 'exit' to quit."
 
 
@@ -47,6 +49,10 @@ class CLI
                 trainer.addPokemonToTeam(selection)
             # elsif selection = PokemonSpecies.include?(selection)
             #     addPokemonToTeam(selection)
+            # elsif selection = "view"
+            #     viewTrainerPokemon
+            elsif selection == "exit"
+                exit!
             elsif puts "
                         ---------------
                 Invalid entry. Please try again
@@ -205,5 +211,9 @@ class CLI
                 puts operationArr
             end
         end
+    end
+    def viewTrainerPokemon
+        puts "inside view"
+
     end
 end
