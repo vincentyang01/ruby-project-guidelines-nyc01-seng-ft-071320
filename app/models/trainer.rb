@@ -12,8 +12,8 @@ class Trainer < ActiveRecord::Base
         trainer = Trainer.find_by(name:name) 
     end
 
-    def addPokemonToTeam
-
+    def addPokemonToTeam(selection)
+        Instance.create(pokemon_species_id :selection.id, trainer_id: self.id, hp: selection.hp, attack: selection.attack, defense: selection.defense, spec_atk: selection.spec_atk, spec_def: selection.spec_def, speed: selection.speed)
     end
     
 

@@ -32,6 +32,8 @@ class CLI
         elsif statsArray.include?(selection)
             # binding.pry
             pokemonWithStat(selection)
+        elsif selection = Pokemon_species.include?(selection.downcase)
+            addPokemonToTeam(selection)
         elsif puts "Invalid entry. Please try again"
         end
     end
