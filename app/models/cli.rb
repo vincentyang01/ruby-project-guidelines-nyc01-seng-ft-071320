@@ -1,35 +1,145 @@
 class CLI
-puts "Hello1"
+
+    
     def start
-        user = Trainer.login
-        puts "Hello2"
-        if user
-            puts "Thank you for using the Pokemon simulator. 
-            Please type in the name of a Pokemonn to add it to your team.
-            Please see the below options if you need to sift through all of the options.
-            
-            Enter 'all' to list all Pokemon.
-            Enter 'all elements' to list all elements.
-            Enter 'stats' to list all Pokemon stat types.
-            Enter 'water' to list all Pokemon of that element.
-            Enter 'hp > 60' to list all Pokemon with a base hp stat over 60."
+        trainer = Trainer.login
+        self.menu
+    end
+    def menu
+        elementArray = ["grass", "poison", "fire", "flying", "water", "bug", "normal", "electric", "ground", "fighting", "psychic", "rock", "ghost", "dragon", "Ice"]
+        statsArray = ["hp", "attack", "defense", "spec_atk", "spec_def", "speed"]
+
+        puts "Thank you for using the Pokemon simulator. 
+        Please type in the name of a Pokemonn to add it to your team.
+        Please see the below options if you need to sift through all of the options.
+        Enter 'all' to list all Pokemon.
+        Enter 'elements' to list all elements.
+        Enter 'stats' to list all Pokemon stat types.
+        Enter 'water' to list all Pokemon of that element.
+        Enter a stat to create a conditional."
 
 
-            selection = gets.chomp
+        selection = STDIN.gets.chomp
+        if selection == "all"
+            allPokemon
+        elsif selection == "elements"
+            elementArray.sort
+        elsif selection == "stats"  
+            statsArray
+        elsif elementArray.include?(selection)
+            puts "Got inside elementArray"
+            pokemonWithElement(selection)
+        elsif statsArray.include?(selection)
+            # binding.pry
+            pokemonWithStat(selection)
+        elsif puts "Invalid entry. Please try again"
+        end
+    end
+
+    
+    def allPokemon
+        names = Array.new
+            PokemonSpecies.all.each do |pokemon|
+                names << pokemon.name
+            end
+        names
+    end
+
+
+    def pokemonWithElement(selection)
+        arr = []
+        PokemonSpecies.all.select do |pokemon|
             #binding.pry
-            if selection == "all"
-                Pokemon.all.each do |pokemon|
-                    puts pokemon.name
-                end
-            elsif selection == "all elements"   
-            elsif selection == "stats"  
-            elsif selection == ""  #if Pokemon.elements array includes selection, filter or map by selection puts
-            elsif selection == ""  #Filter by stat
-            #elsif data.includes(selection)
-            #    InstanceOfPokemon.new(where name)
-            elsif put "Invalid entry. Please try again"
+            if pokemon.element.include?(selection)
+                arr << pokemon.name
             end
         end
-        puts "This user does not"
+    end
+
+    def pokemonWithStat(stat)
+        lessThanArr = []
+        puts "Please enter your inequality (Ex: >40)"
+        inequality = STDIN.gets.chomp
+        puts "this is stat #{stat}"
+        a = inequality.slice!(0)
+        if a == "<" 
+            if stat == "hp"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.hp < inequality.to_i
+                end
+            elsif stat == "attack"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.attack < inequality.to_i
+                end
+            elsif stat == "defense"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.defense < inequality.to_i
+                end
+            elsif stat == "spec_atk"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.spec_atk < inequality.to_i
+                end
+            elsif stat == "spec_def"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.spec_def < inequality.to_i
+                end
+            elsif stat == "speed"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.speed < inequality.to_i
+                end
+            end
+        elsif a == ">"
+            if stat == "hp"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.hp > inequality.to_i
+                end
+            elsif stat == "attack"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.attack > inequality.to_i
+                end
+            elsif stat == "defense"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.defense > inequality.to_i
+                end
+            elsif stat == "spec_atk"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.spec_atk > inequality.to_i
+                end
+            elsif stat == "spec_def"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.spec_def > inequality.to_i
+                end
+            elsif stat == "speed"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.speed > inequality.to_i
+                end
+            end
+        elsif a == "="
+            if stat == "hp"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.hp == inequality.to_i
+                end
+            elsif stat == "attack"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.attack == inequality.to_i
+                end
+            elsif stat == "defense"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.defense == inequality.to_i
+                end
+            elsif stat == "spec_atk"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.spec_atk == inequality.to_i
+                end
+            elsif stat == "spec_def"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.spec_def == inequality.to_i
+                end
+            elsif stat == "speed"
+                PokemonSpecies.all.select do |pokemon|
+                    lessThanArr << pokemon.name if pokemon.speed == inequality.to_i
+                end
+            end
+        end
     end
 end
