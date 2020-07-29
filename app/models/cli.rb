@@ -27,7 +27,6 @@ class CLI
             selection = STDIN.gets.chomp
             if selection == "all"
                 allPokemon
-
             elsif selection == "elements"
                 puts elementArray
 
@@ -41,7 +40,7 @@ class CLI
                 pokemonWithStat(selection)
 
             elsif allPokemonArray.include?(selection)
-                puts "below that"
+                puts "hello"
                 trainer.addPokemonToTeam(selection)
             elsif puts "
                         ---------------
@@ -63,8 +62,10 @@ class CLI
         names = Array.new
         PokemonSpecies.all.each do |pokemon|
             names << pokemon.name
-            # binding.pry
         end
+        return names
+        binding.pry
+
     end
 
     def pokemonWithElement(selection)
