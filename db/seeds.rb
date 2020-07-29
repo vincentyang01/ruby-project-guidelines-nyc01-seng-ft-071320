@@ -7,9 +7,6 @@ PokemonSpecies.destroy_all
 Trainer.destroy_all
 
 
-a = Trainer.create(name: "A")
-a1 = Instance.create()
-
 
 file = File.read("./db/pokemon.json")
 data = JSON.parse(file)

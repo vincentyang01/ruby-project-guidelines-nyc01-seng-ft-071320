@@ -9,11 +9,13 @@ class Trainer < ActiveRecord::Base
         
         First, what is your name?"
         name = STDIN.gets.chomp
-        trainer = Trainer.find_by(name:name) 
+        Trainer.create(name: name)
+        trainer = Trainer.find_by(name:name)
     end
 
-    def addPokemonToTeam
-
+    def addPokemonToTeam(pokemon)
+        puts "made it"
+        Instance.create(pokemon.id, self.id, pokemon)
     end
     
 
