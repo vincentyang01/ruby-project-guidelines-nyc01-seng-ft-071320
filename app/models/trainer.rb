@@ -10,12 +10,17 @@ class Trainer < ActiveRecord::Base
         First, what is your name?"
         name = STDIN.gets.chomp
         Trainer.create(name: name)
-        trainer = Trainer.find_by(name:name)
+        trainer = Trainer.find_by(name: name)
     end
 
-    def addPokemonToTeam(pokemon)
+    def addPokemonToTeam(selection) #=> Bulbasaur - the string that the user entered
         puts "made it"
-        Instance.create(pokemon.id, self.id, pokemon)
+        pokemon = PokemonSpecies.find_by(name: selection)
+        puts "found it"
+        Instance.create(pokemon_species_id: pokemon.id, trainer_id: self.id, hp: pokemon.hp, atk: pokemon.attack, 
+        def: pokemon.defense, spec_atk: pokemon.spec_atk, spec_def: pokemon.spec_def, speed: pokemon.speed)
+        binding.pry
+
     end
     
 

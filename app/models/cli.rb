@@ -8,7 +8,7 @@ class CLI
     def menu(trainer)
         selection = ""
         while trainer && selection != "exit"
-            elementArray = ["grass", "poison", "fire", "flying", "water", "bug", "normal", "electric", "ground", "fighting", "psychic", "rock", "ghost", "dragon", "ice"]
+            elementArray = ["grass", "poison", "fire", "flying", "water", "bug", "normal", "electric", "ground", "fighting", "psychic", "rock", "ghost", "dragon", "ice"].sort
             statsArray = ["hp", "attack", "defense", "spec_atk", "spec_def", "speed"]
 
             puts "Thank you for using the Pokemon simulator. 
@@ -28,10 +28,14 @@ class CLI
             if selection == "all"
                 allPokemon
             elsif selection == "elements"
+                puts "---------------"
                 puts elementArray
+                puts "---------------"
 
-            elsif selection == "stats"  
+            elsif selection == "stats" 
+                puts "---------------" 
                 puts statsArray 
+                puts "---------------"
 
             elsif elementArray.include?(selection)
                 pokemonWithElement(selection)
@@ -40,8 +44,9 @@ class CLI
                 pokemonWithStat(selection)
 
             elsif allPokemonArray.include?(selection)
-                puts "hello"
                 trainer.addPokemonToTeam(selection)
+            # elsif selection = PokemonSpecies.include?(selection)
+            #     addPokemonToTeam(selection)
             elsif puts "
                         ---------------
                 Invalid entry. Please try again
@@ -64,8 +69,6 @@ class CLI
             names << pokemon.name
         end
         return names
-        binding.pry
-
     end
 
     def pokemonWithElement(selection)

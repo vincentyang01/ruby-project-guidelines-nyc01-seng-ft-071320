@@ -13,8 +13,8 @@ data = JSON.parse(file)
 data.each do |pokemon_hash|
     PokemonSpecies.create(pokemon_hash)
 end
-cli = CLI.new
-binding.pry
-cli.start
+# cli = CLI.new
+# binding.pry
+# cli.start
 
-binding.pry
+# binding.pry

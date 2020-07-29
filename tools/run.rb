@@ -2,11 +2,19 @@ require 'json'
 require 'pry'
 require_relative '../config/environment'
 
+# PokemonSpecies.destroy_all
+Trainer.destroy_all
+# Instance.destroy_all
+
 a = Trainer.create(name: "A")
 b = Trainer.create(name: "B")
-# a1 = Instance.create()
+gary = Trainer.create(name: "Gary")
+#
 
 cli = CLI.new
+binding.pry
 cli.start
 
-binding.rpy
+
+
+# 
