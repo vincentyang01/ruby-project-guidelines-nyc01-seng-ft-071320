@@ -11,23 +11,22 @@ class CLI
             statsArray = ["hp", "attack", "defense", "spec_atk", "spec_def", "speed"]
 
             puts "
-            Thank you for using the Pokemon simulator. \n\n
-            Please type in the name of a Pokemonn to add it to your team.
-            Enter 'view' to view your current team.
-            Enter 'delete' to remove a Pokemon from your current team.
+            Thank you for using the Pokedex simulator. \n\n
+            Please type in the name of a Pokemonn to add it to your Pokedex.
+            Enter 'view' to view the current Pokemonn in your Pokedex.
+            Enter 'delete' to remove a Pokemon from your Pokedex.
 
             Please see the below options if you need to sift through all of the options.
-            Enter 'all' to list all Pokemon.
-            Enter 'elements' to list all elements.
-            Enter 'stats' to list all Pokemon stat types.
-            Enter an element like 'water' to list all Pokemon of that element.
+            Enter 'all' to list all Pokemon in the region.
+            Enter 'elements' to list all elements of Pokemon in the region.
+            Enter 'stats' to list all Pokemon stat types of Pokemon in the region.
+            Enter an element, such as 'water', to list all Pokemon with that element.
             Enter a stat to create a conditional.
             
             Enter 'exit' to quit."
 
 
             selection = STDIN.gets.chomp
-            # binding.pry
             if selection == "all"
                 allPokemon
             elsif selection == "elements"
@@ -44,30 +43,50 @@ class CLI
             elsif elementArray.include?(selection)
                 pokemonWithElement(selection)
 
+
             elsif statsArray.include?(selection)
                 pokemonWithStat(selection)
+
 
             elsif allPokemonArray.include?(selection)
                 if calledPokemon.include?(selection)
                     puts "
-            No duplicates plz. This Pokemon was not added. 
-            Current List: #{calledPokemon}\n\n"
-                elsif
-                    calledPokemon.length == 6
-                    puts "
-            You must remove a Pokemon from your team. There is a limit of 6 Pokemon per team.
+            No duplicates plz. This Pokemon was not added to the Pokedex. 
             Current List: #{calledPokemon}\n\n"
                 else
+                    puts "Please enter a nickname for your #{selection}"
+                    nickname = STDIN.gets.chomp
                     calledPokemon << selection
-                    trainer.addPokemonToTeam(selection)
+                    trainer.addPokemonToTeam(selection, nickname)
                     puts "
-            The Pokemon, #{selection}, has been added to your collection.
+            The Pokemon, #{selection}, has been added to your Pokedex with nickname, #{nickname}.
                     "
                 end
+
+
+
             elsif selection == "view"
                 trainer.ownedPokemon
+
+
+
             elsif selection == "delete"
-                trainer.abandonPokemon
+                puts "Please select the Pokemon that you would like to remove from the Pokedex.
+                This is your current Pokemon in your Pokedex: #{calledPokemon}"
+                rmMon = STDIN.gets.chomp # <= Holds Pikachu
+                if !calledPokemon.include?(rmMon)
+                    puts "This Pokemon is not among your current list of Pokemon in you Pokedex.
+                    Please select a Pokemon in your Pokedex to delete: #{calledPokemon}"
+                else
+                    calledPokemon.delete_if{|item| item == rmMon}
+                    puts "current Pokemon in Pokedex after delete: calledPokemon - #{calledPokemon}"
+                    trainer.abandonPokemon(rmMon)
+                    puts "Pokemon #{rmMon} has been removed from your Pokedex.
+                    This is your current Pokemon in your Pokedex: #{calledPokemon}"
+                end
+
+
+                
             elsif selection == "exit"
                 exit!
             elsif puts "
