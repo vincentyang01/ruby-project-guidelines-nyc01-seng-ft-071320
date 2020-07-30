@@ -2,7 +2,8 @@ class CLI
 
     
     def start
-        trainer = Trainer.login
+        @trainer = Trainer.login
+        #this allows trainer to be accessed.
         self.menu
     end
     def menu
@@ -32,9 +33,9 @@ class CLI
         elsif statsArray.include?(selection)
             # binding.pry
             pokemonWithStat(selection)
-        elsif selection = Pokemon_species.include?(selection.downcase)
-            addPokemonToTeam(selection)
-        elsif puts "Invalid entry. Please try again"
+        elsif Pokemon_species.find_by(nane: selection)
+            @trainer.addPokemonToTeam()
+        else puts "Invalid entry. Please try again"
         end
     end
 

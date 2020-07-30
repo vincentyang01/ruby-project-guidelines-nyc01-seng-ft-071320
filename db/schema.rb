@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_07_28_193629) do
     t.integer "spec_atk"
     t.integer "spec_def"
     t.integer "speed"
+    
   end
 
   create_table "pokemon_species", force: :cascade do |t|
