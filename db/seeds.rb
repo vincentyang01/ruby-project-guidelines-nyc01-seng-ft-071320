@@ -5,6 +5,7 @@ require_relative '../config/environment'
 
 PokemonSpecies.destroy_all
 Trainer.destroy_all
+Instance.destroy_all
 
 
 

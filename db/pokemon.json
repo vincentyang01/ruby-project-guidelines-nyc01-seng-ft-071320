@@ -1982,7 +1982,7 @@
   },
   {
     "id": 148,
-    "name": "dragonair",
+    "name": "Dragonair",
     "element": [
       "dragon"
     ],
@@ -1996,7 +1996,7 @@
   },
   {
     "id": 149,
-    "name": "dragonite",
+    "name": "Dragonite",
     "element": [
       "dragon",
       "flying"

@@ -1,18 +1,20 @@
 class CLI
-    
     def start
         trainer = Trainer.login
-        puts "came back from trainer"
         menu(trainer)
     end
     def menu(trainer)
         selection = ""
+        calledPokemon = []
         while trainer && selection != "exit"
             elementArray = ["grass", "poison", "fire", "flying", "water", "bug", "normal", "electric", "ground", "fighting", "psychic", "rock", "ghost", "dragon", "ice"].sort
             statsArray = ["hp", "attack", "defense", "spec_atk", "spec_def", "speed"]
 
-            puts "Thank you for using the Pokemon simulator. \n\n
+            puts "
+            Thank you for using the Pokemon simulator. \n\n
             Please type in the name of a Pokemonn to add it to your team.
+            Enter 'view' to view your current team.
+            Enter 'delete' to remove a Pokemon from your current team.
 
             Please see the below options if you need to sift through all of the options.
             Enter 'all' to list all Pokemon.
@@ -21,12 +23,11 @@ class CLI
             Enter an element like 'water' to list all Pokemon of that element.
             Enter a stat to create a conditional.
             
-            Enter 'view' to view your current team.
-
             Enter 'exit' to quit."
 
 
             selection = STDIN.gets.chomp
+            # binding.pry
             if selection == "all"
                 allPokemon
             elsif selection == "elements"
@@ -38,7 +39,8 @@ class CLI
                 puts "---------------" 
                 puts statsArray 
                 puts "---------------"
-
+            
+                
             elsif elementArray.include?(selection)
                 pokemonWithElement(selection)
 
@@ -46,11 +48,26 @@ class CLI
                 pokemonWithStat(selection)
 
             elsif allPokemonArray.include?(selection)
-                trainer.addPokemonToTeam(selection)
-            # elsif selection = PokemonSpecies.include?(selection)
-            #     addPokemonToTeam(selection)
-            # elsif selection = "view"
-            #     viewTrainerPokemon
+                if calledPokemon.include?(selection)
+                    puts "
+            No duplicates plz. This Pokemon was not added. 
+            Current List: #{calledPokemon}\n\n"
+                elsif
+                    calledPokemon.length == 6
+                    puts "
+            You must remove a Pokemon from your team. There is a limit of 6 Pokemon per team.
+            Current List: #{calledPokemon}\n\n"
+                else
+                    calledPokemon << selection
+                    trainer.addPokemonToTeam(selection)
+                    puts "
+            The Pokemon, #{selection}, has been added to your collection.
+                    "
+                end
+            elsif selection == "view"
+                trainer.ownedPokemon
+            elsif selection == "delete"
+                trainer.abandonPokemon
             elsif selection == "exit"
                 exit!
             elsif puts "
@@ -211,9 +228,5 @@ class CLI
                 puts operationArr
             end
         end
-    end
-    def viewTrainerPokemon
-        puts "inside view"
-
     end
 end
