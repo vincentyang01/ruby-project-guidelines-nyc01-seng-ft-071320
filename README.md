@@ -1,3 +1,38 @@
+Trainer Table -> CLI
+	- Trainer Name
+	- Create Team
+	- Call Trainer ID in instance of Pokemon - limit to 6
+Pokemon species table
+	- JSON file that is in GitHub
+	- Base stats are here
+	- Element is here
+Instance_Of_Pokemon
+	- Migration table
+	- It will hold each instance of a trainer owned Pokemon
+	- Table should hold - HP, ATK, DEF, SPEC, SPEED
+	- Modification of stats — HP += num = rand(10)
+	- Trainer ID
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Module One Final Project Guidelines
 
 Congratulations, you're at the end of module one! You've worked crazy hard to get here and have learned a ton.
