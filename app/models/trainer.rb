@@ -51,4 +51,55 @@ class Trainer < ActiveRecord::Base
         delet = self.instances.find_by(pokemon_species_id: pokemonObj)
         Instance.delete(delet)
     end
+
+    def pokemonYouHaveLeft
+        count = 151
+        count2 = (self.instances).count
+        puts count - count2
+    end
+
+    def oneVsOne(first,second) #Tashawn / Ian - Due to a missing variables in our schema, 
+        firstPokemon = PokemonSpecies.find_by(name:first)
+        secondPokemon = PokemonSpecies.find_by(name:second)
+        firstId = firstPokemon.id
+        secondId = secondPokemon.id
+        firstType = firstPokemon.element
+        secondType = secondPokemon.element
+        firstPokemon = self.instances.find_by(pokemon_species_id: firstId)
+        secondPokemon = self.instances.find_by(pokemon_species_id: secondId)
+
+        #calculations
+        if firstPokemon.speed > secondPokemon.speed 
+            topspeed = first else topspeed = second
+        end
+
+        if firstPokemon.spec_atk > secondPokemon.spec_atk 
+            topspecatk = first else topspecatk = second
+        end
+        
+        if firstPokemon.spec_def > secondPokemon.spec_def 
+            topspecdef = first else topspecdef = second
+        end
+
+        #############
+        puts "
+        -----------------------------
+        Pokemon Name: \t\t\t #{first} \t\t #{second}           
+        Element: \t\t\t #{firstType} \t #{secondType}
+        Health: \t\t\t #{firstPokemon.hp} \t\t #{secondPokemon.hp}
+        Attack: \t\t\t #{firstPokemon.atk} \t\t #{secondPokemon.atk}
+        Defense: \t\t\t #{firstPokemon.def} \t\t #{secondPokemon.def}
+        Special Attack: \t\t #{firstPokemon.spec_atk} \t\t #{secondPokemon.spec_atk}
+        Special Defense: \t\t #{firstPokemon.spec_def} \t\t #{secondPokemon.spec_def}
+        Speed: \t\t\t\t #{firstPokemon.speed} \t\t #{secondPokemon.speed}
+        ----------------------------
+        The first attack will go to #{topspeed} Pokemon.
+        Special attacks will favor #{topspecatk} Pokemon in a head-to-head.
+        #{topspecdef} P will win according to Special Defense stats. 
+        
+        "
+        
+
+        # binding.pry
+    end
 end

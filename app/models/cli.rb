@@ -21,7 +21,9 @@ class CLI
             Enter 'elements' to list all elements of Pokemon in the region.
             Enter 'stats' to list all Pokemon stat types of Pokemon in the region.
             Enter an element, such as 'water', to list all Pokemon with that element.
+            Enter 'remaining pokemon' to see how many Pokemon you have to catch.
             Enter a stat to create a conditional.
+            Enter 'battle' to compare two of your Pokemon.
             
             Enter 'exit' to quit."
 
@@ -33,6 +35,10 @@ class CLI
                 puts "---------------"
                 puts elementArray
                 puts "---------------"
+
+            elsif selection == "remaining pokemon"
+                trainer.pokemonYouHaveLeft
+
 
             elsif selection == "stats" 
                 puts "---------------" 
@@ -55,7 +61,7 @@ class CLI
             Current List: #{calledPokemon}\n\n"
                 else
                     puts "Please enter a nickname for your #{selection}"
-                    nickname = STDIN.gets.chomp
+                    nickname = STDIN.gets.cho
                     calledPokemon << selection
                     trainer.addPokemonToTeam(selection, nickname)
                     puts "
@@ -85,8 +91,17 @@ class CLI
                     This is your current Pokemon in your Pokedex: #{calledPokemon}"
                 end
 
-
-                
+            elsif selection == "battle"
+                if calledPokemon.length < 2
+                    puts "Please add additional Pokemon to your team."
+                end 
+                puts "Please select your first Pokemon: 
+                #{calledPokemon}"
+                first = STDIN.gets.chomp
+                puts "Please select your second Pokemon:
+                #{calledPokemon.reject{|a|a==first}}"
+                second = STDIN.gets.chomp
+                trainer.oneVsOne(first,second)
             elsif selection == "exit"
                 exit!
             elsif puts "
