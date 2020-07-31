@@ -61,7 +61,7 @@ class CLI
             Current List: #{calledPokemon}\n\n"
                 else
                     puts "Please enter a nickname for your #{selection}"
-                    nickname = STDIN.gets.cho
+                    nickname = STDIN.gets.chomp
                     calledPokemon << selection
                     trainer.addPokemonToTeam(selection, nickname)
                     puts "

@@ -3,6 +3,7 @@ class InstanceOfPokemonSetup < ActiveRecord::Migration[6.0]
     create_table :instances do |t|
       t.string :nickname
       t.string :species
+      t.string :element 
       t.integer :pokemon_species_id
       t.integer :trainer_id
       t.integer :hp

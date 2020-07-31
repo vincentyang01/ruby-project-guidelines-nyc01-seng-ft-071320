@@ -16,7 +16,7 @@ class Trainer < ActiveRecord::Base
     def addPokemonToTeam(selection, nickname) #=> Bulbasaur - the string that the user entered
         pokemon = PokemonSpecies.find_by(name: selection)
         num = rand(10) - 5
-        Instance.create(nickname: nickname, species: pokemon_species.name, pokemon_species_id: pokemon.id, trainer_id: self.id, hp: pokemon.hp - num, atk: pokemon.attack - num, 
+        Instance.create(nickname: nickname, species: pokemon_species.name, pokemon_species_id: pokemon.id, trainer_id: self.id, element: pokemon.element, hp: pokemon.hp - num, atk: pokemon.attack - num, 
         def: pokemon.defense - num, spec_atk: pokemon.spec_atk - num, spec_def: pokemon.spec_def - num, speed: pokemon.speed - num)
     end
     
@@ -63,14 +63,22 @@ class Trainer < ActiveRecord::Base
         secondPokemon = PokemonSpecies.find_by(name:second)
         firstId = firstPokemon.id
         secondId = secondPokemon.id
-        firstType = firstPokemon.element
-        secondType = secondPokemon.element
+        # firstType = firstPokemon.element
+        # secondType = secondPokemon.element
         firstPokemon = self.instances.find_by(pokemon_species_id: firstId)
         secondPokemon = self.instances.find_by(pokemon_species_id: secondId)
 
         #calculations
-        if firstPokemon.speed > secondPokemon.speed 
-            topspeed = first else topspeed = second
+        if firstPokemon.hp > secondPokemon.hp
+            topHealth = first else topHealth = second
+        end
+        
+        if firstPokemon.atk > secondPokemon.atk
+            topattack= first else topattack = second
+        end
+        
+        if firstPokemon.def > secondPokemon.def 
+            topdef = first else topdef = second
         end
 
         if firstPokemon.spec_atk > secondPokemon.spec_atk 
@@ -81,11 +89,16 @@ class Trainer < ActiveRecord::Base
             topspecdef = first else topspecdef = second
         end
 
+        if firstPokemon.speed > secondPokemon.speed 
+            topspeed = first else topspeed = second
+        end
+        
+
         #############
         puts "
         -----------------------------
-        Pokemon Name: \t\t\t #{first} \t\t #{second}           
-        Element: \t\t\t #{firstType} \t #{secondType}
+        Pokemon Name: \t\t\t #{first} \t #{second}           
+        Element: \t\t\t #{firstPokemon.element} \t #{secondPokemon.element}
         Health: \t\t\t #{firstPokemon.hp} \t\t #{secondPokemon.hp}
         Attack: \t\t\t #{firstPokemon.atk} \t\t #{secondPokemon.atk}
         Defense: \t\t\t #{firstPokemon.def} \t\t #{secondPokemon.def}
@@ -93,13 +106,21 @@ class Trainer < ActiveRecord::Base
         Special Defense: \t\t #{firstPokemon.spec_def} \t\t #{secondPokemon.spec_def}
         Speed: \t\t\t\t #{firstPokemon.speed} \t\t #{secondPokemon.speed}
         ----------------------------
-        The first attack will go to #{topspeed} Pokemon.
-        Special attacks will favor #{topspecatk} Pokemon in a head-to-head.
-        #{topspecdef} P will win according to Special Defense stats. 
+        - #{topHealth} can take more of a hit with it's larger health pool.
         
-        "
+        - *Poke*Poke*Stab*Tackle* #{topattack} can beat you with a stick harder than the other guy.
+        
+        - #{topdef} will have the stronger defense.
+
+        - #{topspecatk} goes *Pew*Pew*Pew*. SAY HELLO TO MY LITTLE FRIEND!
+        
+        - The #{topspecdef} will win according to Special Defense stats. 
+
+        - The first attack will go to #{topspeed}."
+        
+        
         
 
-        # binding.pry
+         binding.pry
     end
 end

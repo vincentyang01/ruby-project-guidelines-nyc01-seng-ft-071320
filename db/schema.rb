@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2020_07_28_193629) do
   create_table "instances", force: :cascade do |t|
     t.string "nickname"
     t.string "species"
+    t.string "element"
     t.integer "pokemon_species_id"
     t.integer "trainer_id"
     t.integer "hp"
